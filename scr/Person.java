@@ -16,6 +16,8 @@ public class Person {
         int id = random.nextInt(2312323);
         System.out.println("Введіть ім`я: ");
         String name = scanner.nextLine();
+        System.out.println("Введіть фамілію: ");
+        String surname = scanner.nextLine();
         System.out.println("Введіть місто проживання: ");
         String town = scanner.nextLine();
         System.out.println("Введіть ваш вік: ");
@@ -25,9 +27,10 @@ public class Person {
         } else {
             System.out.println("Введіть ваш дійсний номер: ");
             long number = scanner.nextLong();
-            System.out.println("Нового користувача " + "\"" + name + "\"" + " зареєстровано");
+            System.out.println("Нового користувача " + "\"" + name + " " + surname + "\"" + " зареєстровано");
             System.out.println("ID користувача: " + id);
-            personInfoStatic(name, town, number);
+            String fullName = name + " " + surname;
+            personInfoStatic(fullName, town, number);
         }
     }
 }
