@@ -3,7 +3,10 @@ import java.util.Scanner;
 
 public class Person {
 
-    public static void personInfo(String name, String town, long number) {
+    public static void personInfoStatic(String name, String town, long number) {
+        System.out.println("Зателефонувати громадянину " + name + " із міста " + town + " можна за номером: " + number);
+    }
+    public void personInfo(String name, String town, long number) {
         System.out.println("Зателефонувати громадянину " + name + " із міста " + town + " можна за номером: " + number);
     }
 
@@ -24,7 +27,7 @@ public class Person {
             long number = scanner.nextLong();
             System.out.println("Нового користувача " + "\"" + name + "\"" + " зареєстровано");
             System.out.println("ID користувача: " + id);
-            personInfo(name, town, number);
+            personInfoStatic(name, town, number);
         }
     }
 }
