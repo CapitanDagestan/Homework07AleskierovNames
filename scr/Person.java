@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Person {
 
-    public static Object personInfo(String name, String town, int number) {
+    public static Object personInfo(String name, String town, long number) {
         System.out.println("Зателефонувати громадянину " + name + " із міста " + town + " можна за номером: " + number);
         return null;
     }
@@ -22,7 +22,7 @@ public class Person {
             System.out.println("Потрібен дозвіл батьків для реєстрації");
         } else {
             System.out.println("Введіть ваш дійсний номер: ");
-            int number = scanner.nextInt();
+            long number = scanner.nextLong();
             System.out.println("Нового користувача " + "\"" + name + "\"" + " зареєстровано");
             System.out.println("ID користувача: " + id);
             personInfo(name, town, number);
