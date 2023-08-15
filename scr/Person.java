@@ -7,7 +7,7 @@ public class Person {
         System.out.println("Зателефонувати громадянину " + name + " із міста " + town + " можна за номером: " + number);
     }
 
-    public static void personNew() {
+    public void personNew() {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
         int id = random.nextInt(2312323);
