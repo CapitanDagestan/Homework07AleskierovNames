@@ -3,12 +3,11 @@ import java.util.Scanner;
 
 public class Person {
 
-    public static Object personInfo(String name, String town, long number) {
+    public static void personInfo(String name, String town, long number) {
         System.out.println("Зателефонувати громадянину " + name + " із міста " + town + " можна за номером: " + number);
-        return null;
     }
 
-    public static Object personNew() {
+    public static void personNew() {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
         int id = random.nextInt(2312323);
@@ -27,6 +26,5 @@ public class Person {
             System.out.println("ID користувача: " + id);
             personInfo(name, town, number);
         }
-        return null;
     }
 }

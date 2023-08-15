@@ -1,9 +1,13 @@
 public class Main {
 
     public static void main(String[] args) {
-        Person.personInfo("Will Smith", "New York", 46673892);
-        Person.personInfo("Jackie chan", "Shanghai", 412231231);
-        Person.personInfo("Sherlock Holmes", "London", 43534511);
-        Person.personNew();
+        Person will = new Person();
+        Person jackie = new Person();
+        Person sherlock = new Person();
+        Person you = new Person();
+        will.personInfo("Will Smith", "New York", 46673892);
+        jackie.personInfo("Jackie chan", "Shanghai", 412231231);
+        sherlock.personInfo("Sherlock Holmes", "London", 43534511);
+        you.personNew();
     }
 }
